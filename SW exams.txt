@@ -1,0 +1,23 @@
+Here are some test SW fragments, which have direct correspondence to parts of our SW
+
+----------------------------------------------------
+5.Extract curve maximum
+
+write a func wich finds the maximum in an array and coppies the 5 elements closest(in positions,not in values) to the maximum (inclusively) in a separate array. 
+
+void extract_maximum(uint16* in_arr, uint16* out_arr, int count);
+count: size of the innput array
+
+
+----------------------------------------------------
+6. Find max slope dynamic range
+
+Write a func, which searches an array for maximum slope, i.e. MAX(abs(arr[i+1]-arr[i])). The function
+should retur the ratio MAX/MIN  of the samples, forming the max slope and the 2 adjacent ones (if such are present).
+
+uint16 max_slope_dyn_range(uint32* curve, int count)
+
+curve : pointer to the array
+count : size of the input array
+return : fixed point format with 8 fractional bits.
+
